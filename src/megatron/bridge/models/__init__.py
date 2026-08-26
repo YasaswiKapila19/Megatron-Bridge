@@ -32,6 +32,7 @@ from megatron.bridge.models.deepseek import (
     DeepSeekV2Bridge,
     DeepSeekV3Bridge,
 )
+from megatron.bridge.models.chimera_research import ChimeraResearchBridge
 from megatron.bridge.models.ernie import (
     Ernie45Bridge,
 )
@@ -215,6 +216,7 @@ __all__ = [
     # DeepSeek Models
     "DeepSeekV2Bridge",
     "DeepSeekV3Bridge",
+    "ChimeraResearchBridge",
     # ERNIE Text-Only Models
     "Ernie45Bridge",
     # ERNIE VL Models
