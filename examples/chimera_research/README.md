@@ -20,7 +20,8 @@ Example:
 from transformers import ChimeraResearchConfig, ChimeraResearchForCausalLM
 from megatron.bridge import AutoBridge
 
-model = ChimeraResearchForCausalLM(ChimeraResearchConfig())
-bridge = AutoBridge.from_hf(model)
+config = ChimeraResearchConfig()
+model = ChimeraResearchForCausalLM(config)
+bridge = AutoBridge.from_hf_config(config)
 provider = bridge.to_megatron_provider(load_weights=False)
 ```
